@@ -1,0 +1,7 @@
+# Makefile to build project with C++11 standard
+
+build:
+	g++ -std=c++11 -o project2.out src/*.cpp
+
+clean:
+	rm -f project2.out
