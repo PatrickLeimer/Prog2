@@ -72,7 +72,7 @@ TGAfile readTGA(const string& in) {
     ifstream infile(in,ios::binary);
     if (!infile.is_open()) {
         cout << infile.is_open() << endl;
-        throw runtime_error("Could not open input file: " + in);
+        throw runtime_error("File does not exist.");
     }
 
     infile.read(&header.idLength, sizeof(header.idLength));
